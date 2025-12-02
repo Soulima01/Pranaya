@@ -97,8 +97,9 @@ Pranaya evolves into a **continually learning medical assistant**.
 ##  Local Development
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Soulima01/Pranaya
 cd Pranaya
 python3 -m venv venv
 source venv/bin/activate   # Mac/Linux
 pip install -r requirements.txt
+
