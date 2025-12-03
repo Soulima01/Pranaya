@@ -64,7 +64,7 @@ If a diabetic user reports “foot pain,” neuropathy becomes a top priority.
 | Component | Stack / Service |
 |----------|----------------|
 | Backend | FastAPI + Python |
-| AI Orchestration | LangChain / LangGraph |
+| AI Orchestration | LangChain |
 | Core LLM | Google Gemini (multimodal) |
 | Deployment | Google Cloud Run Services |
 | Database | JSON → future: Firestore |
@@ -102,4 +102,5 @@ cd Pranaya
 python3 -m venv venv
 source venv/bin/activate   # Mac/Linux
 pip install -r requirements.txt
+
 
