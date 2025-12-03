@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUserStore } from '@/lib/store/userStore';
-import { Activity, ArrowRight, Lock } from 'lucide-react';
-import Link from 'next/link';
+import { Activity, ArrowRight } from 'lucide-react';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -15,7 +14,6 @@ export default function LoginPage() {
     if (!name.trim()) return;
     
     // Simulate Login: Save name to store
-    // We reset isAssessmentDone to false to force the full flow for the demo
     setProfile({ name: name, isAssessmentDone: false }); 
     
     router.push('/assessment');
@@ -32,7 +30,7 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <h1 className="text-2xl font-bold text-center text-gray-900 mb-2">Welcome Back</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-900 mb-2">Welcome</h1>
         <p className="text-center text-gray-500 mb-8">Sign in to access your health dashboard.</p>
         
         <div className="space-y-6">
@@ -55,9 +53,7 @@ export default function LoginPage() {
             Continue <ArrowRight size={20} />
           </button>
 
-          <div className="text-center text-sm text-gray-400 mt-4">
-            Don't have an account? <Link href="/signup" className="text-blue-600 font-bold hover:underline">Sign Up</Link>
-          </div>
+          {/* DELETED: The "Don't have an account? Sign Up" link was here. */}
         </div>
       </div>
     </div>
